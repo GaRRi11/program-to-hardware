@@ -13,11 +13,52 @@ Human-readable code written by the programmer. Example:
 | 4    | Comments          | Removed.                                         |
 3.Compiler
 
-<pre> ``` .section .data
+<pre>  .section .data
 g:
     .long 5
- ``` </pre>
+ </pre>
 
 .data: initialized data section
 
 g: global variable with value 5 (32-bit integer → 4 bytes)
+
+
+<pre>  .section .bss
+.comm u,4,4
+
+ </pre>
+
+ .bss: uninitialized data section
+
+.comm u,4,4: reserves 4 bytes for variable u, aligned to 4 bytes
+→ u is uninitialized global variable
+
+<pre>  .section .rodata
+.LC0:
+    .string "Hi"
+.LC1:
+    .float 3.14
+ </pre>
+
+ .rodata: read-only constants
+
+.LC0: string constant "Hi"
+
+.LC1: float constant 3.14
+
+<pre>  .text
+.globl main
+main:
+    push rbp
+    mov rbp, rsp
+    sub rsp, 16
+    ...
+ </pre>
+ 
+.text: executable code section
+
+.globl main: makes main visible externally (entry point for program)
+
+push rbp / mov rbp, rsp: sets up stack frame
+
+sub rsp, 16: reserves 16 bytes of stack space for local variables
