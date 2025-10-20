@@ -25,7 +25,6 @@ g: global variable with value 5 (32-bit integer → 4 bytes)
 
 <pre>  .section .bss
 .comm u,4,4
-
  </pre>
 
  .bss: uninitialized data section
