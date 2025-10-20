@@ -1,3 +1,3 @@
 ## C Program Flow to Assembly
 
-<img width="1048" height="779" alt="c drawio" src="https://github.com/user-attachments/assets/7f414f47-74a8-4e90-9ec8-cbd5b2784ce1" />
+<img width="1049" height="734" alt="c drawio (1)" src="https://github.com/user-attachments/assets/4d085ea2-981c-46e1-8c2c-8675849b5d39" />
