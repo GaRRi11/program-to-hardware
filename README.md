@@ -49,3 +49,19 @@ main:
 
 <img width="500" height="741" alt="virtual memory drawio" src="https://github.com/user-attachments/assets/56b41e6b-39ea-408f-8af1-846ee6e20cbd" />
 
+
+Virtual memory is created and managed by the OS, combining physical RAM and disk storage. When RAM is full, inactive pages are moved to disk (swap), allowing programs to run as if they have more memory than physically available. Only kernel code, drivers, or embedded programs can access physical RAM directly.
+
+Each section has specific permissions to prevent malicious writes and enforce isolation, security, and convenience. Each process sees its own virtual address space, divided into sections: 
+
+Stack: Grows downwards; stores function call frames, local variables, and return addresses. Follows LIFO principle. 
+
+Heap: Grows upwards; stores dynamically allocated memory (malloc/new). Allocation/frees are arbitrary order. 
+
+BSS (Block Started by Symbol): Uninitialized global/static variables. Zeroed at program start. 
+
+Data Segment: Initialized global/static variables. 
+
+Text / Code Segment: Program instructions and read-only constants. 
+
+Kernel Space: Reserved for OS, inaccessible to user processes. 
