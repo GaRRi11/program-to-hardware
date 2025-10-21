@@ -45,8 +45,7 @@ main:
  
 .text: executable code section
 
-.globl main: makes main visible externally (entry point for program)
+## VIRTUAL MEMORY
 
-push rbp / mov rbp, rsp: sets up stack frame
+<img width="500" height="741" alt="virtual memory drawio" src="https://github.com/user-attachments/assets/56b41e6b-39ea-408f-8af1-846ee6e20cbd" />
 
-sub rsp, 16: reserves 16 bytes of stack space for local variables
