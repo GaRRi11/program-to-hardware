@@ -65,3 +65,8 @@ Data Segment: Initialized global/static variables.
 Text / Code Segment: Program instructions and read-only constants. 
 
 Kernel Space: Reserved for OS, inaccessible to user processes. 
+
+## C PROGRAM VIRTUAL MEMORY 
+
+<img width="996" height="801" alt="c-vm drawio" src="https://github.com/user-attachments/assets/22604d36-ff41-42a5-b379-a56cebb4053d" />
+
