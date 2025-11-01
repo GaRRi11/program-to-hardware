@@ -70,3 +70,5 @@ Kernel Space: Reserved for OS, inaccessible to user processes.
 
 <img width="996" height="801" alt="c-vm drawio" src="https://github.com/user-attachments/assets/22604d36-ff41-42a5-b379-a56cebb4053d" />
 
+Whenever a function is called, a new stack frame is created, and the old EIP address gets pushed to the top of the new stack frame, so the program knows where to return once the function is finished.
+
